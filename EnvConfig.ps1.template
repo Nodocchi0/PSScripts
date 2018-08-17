@@ -1,0 +1,7 @@
+# Template File
+# Modify for your environment
+
+$company = "company"
+$conURI = "http://subdomain.company.com/PowerShell/"
+$remoteAADSyncComputer = "azure-server"
+$onPremURI = "http://exchangeserver.company.com/PowerShell/"
