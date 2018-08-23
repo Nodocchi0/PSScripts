@@ -18,8 +18,8 @@ If (!$License) {$License = Read-Host "Enter licensetype (exclude '$company' from
 
 Set-MSolUser -UserPrincipalName $UserName -UsageLocation US
 
-If (!$Unlicense) { Set-MsolUserLicense -UserPrincipalName $UserName -AddLicenses ("$company\:" + $License) }
+If (!$Unlicense) { Set-MsolUserLicense -UserPrincipalName $UserName -AddLicenses ($company + ":" + $License) }
 
-If ($Unlicense) { Set-MsolUserLicense -UserPrincipalName $UserName -RemoveLicenses ("$company\:" + $License) }
+If ($Unlicense) { Set-MsolUserLicense -UserPrincipalName $UserName -RemoveLicenses ($company + ":" + $License) }
 
 Get-MsolUser -UserPrincipalName $UserName
