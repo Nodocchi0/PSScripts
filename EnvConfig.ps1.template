@@ -1,8 +1,11 @@
 # Template File
 # Modify for your environment
+#
+# Include the trailing \ if it is included in the example
 
 $company = "company"
 $conURI = "http://subdomain.company.com/PowerShell/"
 $remoteAADSyncComputer = "azure-server"
 $onPremURI = "http://exchangeserver.company.com/PowerShell/"
-$UserGroupCSVLocation = "\\remote\server\share"
+$UserGroupCSVLocation = "\\remote\server\share\"
+$LocalExportCSVLocation = "C:\My\Folder\"
